@@ -1,0 +1,12 @@
+---
+id: 20q41avcrcsp2zuizqjoetq
+title: IX_VT_MIG20
+desc: null
+updated: 1684521574
+created: 1684521574
+---
+
+
+```sql
+ CREATE INDEX IX_VT_MIG20 ON VENTATICKETS (VENDIDO_EN, FORMA_PAGO, ESTA_CANCELADO, ACTIVO, PAGADO_EN, FACTURA_ID);
+```

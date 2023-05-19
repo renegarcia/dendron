@@ -1,0 +1,12 @@
+---
+id: 6cq6yyy08yovd5sayosrelw
+title: IDX_CREDITOS_ABONOS_OLD_ID
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX IDX_CREDITOS_ABONOS_OLD_ID ON CREDITOS_ABONOS (OLD_ABONO_ID);
+```

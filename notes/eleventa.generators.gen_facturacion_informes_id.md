@@ -1,0 +1,12 @@
+---
+id: gs776cq5mr13lk3im25ax7m
+title: GEN_FACTURACION_INFORMES_ID
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR GEN_FACTURACION_INFORMES_ID;
+```

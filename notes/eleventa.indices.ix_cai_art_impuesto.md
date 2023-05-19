@@ -1,0 +1,12 @@
+---
+id: hzaug9z0bfsxnnauz25us6y
+title: IX_CAI_ART_IMPUESTO
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX IX_CAI_ART_IMPUESTO ON CREDITOS_ARTICULOS_IMPUESTOS (ABONO_ID, ARTICULO_ID);
+```

@@ -1,0 +1,15 @@
+---
+id: 7b9o8rhy2hrwdloxljvfsbi
+title: INVENTARIO_APARTADO
+desc: null
+updated: 1684521572
+created: 1684521572
+---
+
+
+```sql
+ CREATE TABLE INVENTARIO_APARTADO (PRODUCTO_ID TLLAVE NOT NULL,
+        CANTIDAD_APARTADA TCANTIDAD NOT NULL,
+        TICKET_ID TLLAVE,
+        CAJA_ID TLLAVE);
+```

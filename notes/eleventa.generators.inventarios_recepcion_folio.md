@@ -1,0 +1,12 @@
+---
+id: 42ff1meojb53hzke4m5jkmr
+title: INVENTARIOS_RECEPCION_FOLIO
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR INVENTARIOS_RECEPCION_FOLIO;
+```

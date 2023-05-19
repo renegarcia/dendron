@@ -1,0 +1,12 @@
+---
+id: 6lpizdmy5sn3sao0s5vxbrd
+title: VENTATICKETS_IDX4
+desc: null
+updated: 1684521574
+created: 1684521574
+---
+
+
+```sql
+ CREATE INDEX VENTATICKETS_IDX4 ON VENTATICKETS (PAGADO_EN, ESTA_CANCELADO, CLIENTE_ID);
+```

@@ -1,0 +1,12 @@
+---
+id: 4vmxyj72aess86k4cy2mb4b
+title: PAGOS_MIXTOS_ID_IDX
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX PAGOS_MIXTOS_ID_IDX ON PAGOS_MIXTOS (ID, CLIENTESV2_CREDITO_ID);
+```

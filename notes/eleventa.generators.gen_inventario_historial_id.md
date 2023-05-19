@@ -1,0 +1,12 @@
+---
+id: 5ji98977n1yeh0s61r4ikn5
+title: GEN_INVENTARIO_HISTORIAL_ID
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR GEN_INVENTARIO_HISTORIAL_ID;
+```

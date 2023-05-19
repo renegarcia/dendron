@@ -1,0 +1,12 @@
+---
+id: 23rxf0154utlg6u9584slas
+title: GEN_SERVICIOS_REFERENCIA_ABONOS
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR GEN_SERVICIOS_REFERENCIA_ABONOS;
+```

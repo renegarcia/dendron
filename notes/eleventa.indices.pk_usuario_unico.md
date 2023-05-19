@@ -1,0 +1,12 @@
+---
+id: 5fu4orq25d5vlffk5mo7c35
+title: PK_USUARIO_UNICO
+desc: null
+updated: 1684521574
+created: 1684521574
+---
+
+
+```sql
+ CREATE UNIQUE INDEX PK_USUARIO_UNICO ON USUARIOS (USUARIO, ELIMINADO_EN);
+```

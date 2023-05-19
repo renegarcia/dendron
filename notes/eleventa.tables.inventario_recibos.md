@@ -1,0 +1,19 @@
+---
+id: 7z52nbjjltdr6hhsqucmcly
+title: INVENTARIO_RECIBOS
+desc: null
+updated: 1684521572
+created: 1684521572
+---
+
+
+```sql
+ CREATE TABLE INVENTARIO_RECIBOS (ID TLLAVE NOT NULL,
+        FOLIO TLLAVE NOT NULL,
+        RECIBIDO_EN TFECHAHORA NOT NULL,
+        ORDEN_DE_COMPRA_ID TLLAVE,
+        CAJA_ID TLLAVE,
+        USUARIO_ID TLLAVE,
+        ALMACEN_ID TLLAVE,
+PRIMARY KEY (ID));
+```

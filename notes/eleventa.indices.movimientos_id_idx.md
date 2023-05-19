@@ -1,0 +1,12 @@
+---
+id: 121tmvcujqdygvv5088ra2r
+title: MOVIMIENTOS_ID_IDX
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX MOVIMIENTOS_ID_IDX ON MOVIMIENTOS (ID, CLIENTESV2_CREDITO_ID);
+```

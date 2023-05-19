@@ -1,0 +1,12 @@
+---
+id: 1jue7t71d4ihed1feugzo2l
+title: GEN_VENTATICKETS_ARTICULOS_ID
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR GEN_VENTATICKETS_ARTICULOS_ID;
+```

@@ -1,0 +1,12 @@
+---
+id: 6m84ngq1yfkicc43fnuxx94
+title: IDX_INV_HIST_PROD
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX IDX_INV_HIST_PROD ON INVENTARIO_HISTORIAL (PRODUCTO_ID, CUANDO_FUE);
+```

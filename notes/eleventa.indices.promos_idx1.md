@@ -1,0 +1,12 @@
+---
+id: 2gixql7kr0xlqo4cz0g25n2
+title: PROMOS_IDX1
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX PROMOS_IDX1 ON PROMOCIONES_POR_CANTIDAD (PRODUCTO_CODIGO);
+```

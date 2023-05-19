@@ -1,0 +1,12 @@
+---
+id: 1c1vw1ihdx7o8y640cco060
+title: MOVIMIENTOS_IDX1
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX MOVIMIENTOS_IDX1 ON MOVIMIENTOS (OPERACION_ID);
+```

@@ -1,0 +1,12 @@
+---
+id: 617iq8v9f10m04cj0t9s0ic
+title: GEN_DEVOLUCIONES_ARTICULOS_ID
+desc: null
+updated: 1684521570
+created: 1684521570
+---
+
+
+```sql
+ CREATE GENERATOR GEN_DEVOLUCIONES_ARTICULOS_ID;
+```

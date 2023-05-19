@@ -1,0 +1,12 @@
+---
+id: 7y9cy30vcso3bzjy74iim7p
+title: IX_CAI_ABONO_IMPUESTO
+desc: null
+updated: 1684521573
+created: 1684521573
+---
+
+
+```sql
+ CREATE INDEX IX_CAI_ABONO_IMPUESTO ON CREDITOS_ABONOS_IMPUESTOS (ABONO_ID, VENTA_ID, IMPUESTO_ID);
+```
