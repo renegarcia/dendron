@@ -23,6 +23,10 @@ commands:
 workspace:
     vaults:
         -
+            fsPath: dependencies/localhost/eleventa
+            selfContained: true
+            name: eleventa
+        -
             fsPath: .
             selfContained: true
             name: Dendron
@@ -105,3 +109,8 @@ publishing:
     enableTaskNotes: true
     enablePrettyLinks: true
     searchMode: search
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - eleventa
+            - Dendron
