@@ -1,10 +1,6 @@
 {
     "folders": [
         {
-            "path": "dependencies/localhost/eleventa/notes",
-            "name": "eleventa"
-        },
-        {
             "path": "notes",
             "name": "Dendron"
         }
