@@ -23,9 +23,12 @@ commands:
 workspace:
     vaults:
         -
-            fsPath: dependencies/localhost/eleventa
+            fsPath: dependencies/github.com/renegarcia/eleventa-db
+            remote:
+                type: git
+                url: git@github.com:renegarcia/eleventa-db.git
             selfContained: true
-            name: eleventa
+            name: eleventa-db
         -
             fsPath: .
             selfContained: true
@@ -112,5 +115,5 @@ publishing:
     duplicateNoteBehavior:
         action: useVault
         payload:
-            - eleventa
+            - eleventa-db
             - Dendron

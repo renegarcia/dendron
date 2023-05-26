@@ -5,3 +5,4 @@ seeds
 .next
 pods/service-connections
 dependencies/localhost/eleventa
+dependencies/github.com/renegarcia/eleventa-db

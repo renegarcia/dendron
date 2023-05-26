@@ -1,8 +1,8 @@
 {
     "folders": [
         {
-            "path": "dependencies/localhost/eleventa/notes",
-            "name": "eleventa"
+            "path": "dependencies/github.com/renegarcia/eleventa-db/notes",
+            "name": "eleventa-db"
         },
         {
             "path": "notes",
