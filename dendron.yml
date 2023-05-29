@@ -117,3 +117,6 @@ publishing:
         payload:
             - eleventa-db
             - Dendron
+    siteUrl: https://renegarcia.github.io
+    assetsPrefix: /Dendron
+
