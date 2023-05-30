@@ -2,9 +2,16 @@
 id: 6zw1kq25fhhqug5i45y1srj
 title: Como extraer metadatos del volcado de una base de datos
 desc: ''
-updated: 1684613726305
+updated: 1685478604651
 created: 1684612996461
 ---
+
+## Resultado
+
+[Consultar](https://renegarcia.github.io/eleventa-db/) la base de datos Eleventa.
+
+## Código
+
 
 Primero instalamos el paquete `sqlparse`. Desde `pypy`:
 
