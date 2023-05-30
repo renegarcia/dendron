@@ -22,17 +22,15 @@ commands:
     templateHierarchy: template
 workspace:
     vaults:
-        -
-            fsPath: dependencies/github.com/renegarcia/eleventa-db
-            remote:
-                type: git
-                url: git@github.com:renegarcia/eleventa-db.git
-            selfContained: true
-            name: eleventa-db
-        -
-            fsPath: .
-            selfContained: true
-            name: Dendron
+        - fsPath: dependencies/github.com/renegarcia/eleventa-db
+          remote:
+              type: git
+              url: git@github.com:renegarcia/eleventa-db.git
+          selfContained: true
+          name: eleventa-db
+        - fsPath: .
+          selfContained: true
+          name: Dendron
     journal:
         dailyDomain: daily
         name: journal
@@ -47,7 +45,7 @@ workspace:
         dateFormat: y.MM.dd
         addBehavior: asOwnDomain
         statusSymbols:
-            '': ' '
+            "": " "
             wip: w
             done: x
             assigned: a
@@ -55,7 +53,7 @@ workspace:
             blocked: b
             delegated: l
             dropped: d
-            pending: 'y'
+            pending: "y"
         taskCompleteStatus:
             - done
             - x
@@ -88,6 +86,8 @@ preview:
     enableKatex: true
     automaticallyShowPreview: false
 publishing:
+    enableHierarchyDisplay: true
+    hierarchyDisplayTitle: Children
     enableFMTitle: true
     enableNoteTitleForLink: true
     enablePrettyRefs: true
@@ -119,4 +119,3 @@ publishing:
             - Dendron
     siteUrl: https://renegarcia.github.io
     assetsPrefix: /dendron
-
