@@ -1,0 +1,36 @@
+<h1 id="coding-tips">Coding tips<a aria-hidden="true" class="anchor-heading icon-link" href="#coding-tips"></a></h1>
+<h1 id="edit-git-remote-url">Edit Git Remote URL<a aria-hidden="true" class="anchor-heading icon-link" href="#edit-git-remote-url"></a></h1>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> remote set-url origin <span class="token operator">&#x3C;</span>new-url<span class="token operator">></span>
+
+</code></pre>
+<p><a href="https://chat.openai.com/share/5bbfc058-d6be-4ec8-b03f-be8df3619c37">Source</a></p>
+<h1 id="django-tests-not-running">Django tests not running<a aria-hidden="true" class="anchor-heading icon-link" href="#django-tests-not-running"></a></h1>
+<p><strong>Solution.</strong> Make sure you are writing your tests wrapped in classes that inherit from <code>TestCase</code>. Example:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>test <span class="token keyword">import</span> TestCase
+
+
+<span class="token keyword">class</span> <span class="token class-name">FooTest</span><span class="token punctuation">(</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">setUp</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">tearDown</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">test_this_will</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string">'Win'</span>
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/2037364/django-test-runner-not-finding-tests">Read more</a></p>
+<h1 id="python">Python<a aria-hidden="true" class="anchor-heading icon-link" href="#python"></a></h1>
+<p><a href="/dendron/notes/hwyvw05ski3srgkxy31ym7w">Python</a></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/dendron/notes/cfm4n435nhmnbubcoi8a356">Code Snippets</a></li>
+<li><a href="/dendron/notes/hwyvw05ski3srgkxy31ym7w">Python</a></li>
+<li><a href="/dendron/notes/j9wmd96lxohstbdavjirhbo">Ruby</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/">Inicio (Dendron)</a></li>
+</ul>

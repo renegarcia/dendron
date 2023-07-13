@@ -1,0 +1,84 @@
+<h1 id="projects">Projects<a aria-hidden="true" class="anchor-heading icon-link" href="#projects"></a></h1>
+<h1 id="how-to-specify-cli-scripts-in-a-pyproject-file">How to specify cli scripts in a pyproject file<a aria-hidden="true" class="anchor-heading icon-link" href="#how-to-specify-cli-scripts-in-a-pyproject-file"></a></h1>
+<h2 id="using-poetry">Using poetry<a aria-hidden="true" class="anchor-heading icon-link" href="#using-poetry"></a></h2>
+<p>If you use poetry, assuming your project is organized as in this example </p>
+<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">tool.poetry</span><span class="token punctuation">]</span>
+<span class="token key property">name</span> <span class="token punctuation">=</span> <span class="token string">"packagename"</span>
+<span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token string">"0.1.0"</span>
+<span class="token key property">description</span> <span class="token punctuation">=</span> <span class="token string">""</span>
+<span class="token key property">authors</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"finswimmer &#x3C;finswimmer@example.org>"</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">tool.poetry.scripts</span><span class="token punctuation">]</span>
+<span class="token key property">cli-script</span> <span class="token punctuation">=</span> <span class="token string">"packagename.cli:main"</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">tool.poetry.dependencies</span><span class="token punctuation">]</span>
+<span class="token key property">python</span> <span class="token punctuation">=</span> <span class="token string">"^3.6"</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">tool.poetry.dev-dependencies</span><span class="token punctuation">]</span>
+<span class="token key property">pytest</span> <span class="token punctuation">=</span> <span class="token string">"^5.2"</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">build-system</span><span class="token punctuation">]</span>
+<span class="token key property">requires</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">"poetry>=1.0"</span><span class="token punctuation">]</span>
+<span class="token key property">build-backend</span> <span class="token punctuation">=</span> <span class="token string">"poetry.masonry.api"</span>
+</code></pre>
+<p>Simply call </p>
+<pre class="language-sh"><code class="language-sh">poetry install --only-root
+</code></pre>
+<p>Where your project should be organized as </p>
+<pre><code>packagename
+├── packagename
+│   ├── __init__.py
+│   └── cli.py
+├── tests
+│   ├── __init__.py
+│   └── test_packagename.py
+└── pyproject.toml
+</code></pre>
+<p>And the content of the script should resemble this:</p>
+<pre class="language-python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello world"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+  main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<p><strong>Source</strong>: <a href="https://stackoverflow.com/questions/62572961/how-to-organize-a-python-project-with-poetry-for-a-command-line-script">https://stackoverflow.com/questions/62572961/how-to-organize-a-python-project-with-poetry-for-a-command-line-script</a></p>
+<h2 id="with-setup-tools">With setup tools<a aria-hidden="true" class="anchor-heading icon-link" href="#with-setup-tools"></a></h2>
+<p>If your project is simple, for example like this,</p>
+<pre><code>yourprojectdir/
+    setup.py
+    scripts/
+        myscript.sh
+</code></pre>
+<p>you may only need to create or append to your <code>setup.py</code> the following:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> setuptools <span class="token keyword">import</span> setup
+<span class="token comment"># you may need setuptools instead of distutils</span>
+
+setup<span class="token punctuation">(</span>
+    scripts <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">'scripts/myscript.sh'</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>Then in the shell type</p>
+<pre class="language-sh"><code class="language-sh">python setup.py install
+</code></pre>
+<hr>
+<p><strong>Source:</strong> <a href="https://stackoverflow.com/questions/874521/python-install-script-to-system">https://stackoverflow.com/questions/874521/python-install-script-to-system</a></p>
+<h1 id="references">References<a aria-hidden="true" class="anchor-heading icon-link" href="#references"></a></h1>
+<ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/63326840/specifying-command-line-scripts-in-pyproject-toml">Specifying Command Line Scripts In Pyproject Toml</a>.</p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/62572961/how-to-organize-a-python-project-with-poetry-for-a-command-line-script">How To Organize A Python Project With Poetry For A Command Line Script</a>.</p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/874521/python-install-script-to-system">Python install script to system</a>.</p>
+</li>
+<li>
+<p><a href="https://www.yippeecode.com/topics/python-poetry-cheat-sheet/#:~:text=Installing%20all%20dependencies%2C%20but%20not%20the%20project%20itself.,install%20all%20dependencies%20excluding%20the%20ones%20for%20Development.">Poetry Cheatsheet</a></p>
+</li>
+</ul>

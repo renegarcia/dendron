@@ -1,0 +1,63 @@
+<h1 id="how-to-use-argparse">How to use Argparse<a aria-hidden="true" class="anchor-heading icon-link" href="#how-to-use-argparse"></a></h1>
+<p>To use <code>argparse</code> in Python for creating a program that asks for a filename and an output directory, you can follow these steps:</p>
+<ol>
+<li>Import the <code>argparse</code> module:</li>
+</ol>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> argparse
+</code></pre>
+<ol start="2">
+<li>Create an instance of the <code>argparse.ArgumentParser</code> class:</li>
+</ol>
+<pre class="language-python"><code class="language-python">parser <span class="token operator">=</span> argparse<span class="token punctuation">.</span>ArgumentParser<span class="token punctuation">(</span>description<span class="token operator">=</span><span class="token string">'Process input file and output directory.'</span><span class="token punctuation">)</span>
+</code></pre>
+<ol start="3">
+<li>Define the command-line arguments you want to accept:</li>
+</ol>
+<pre class="language-python"><code class="language-python">parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'filename'</span><span class="token punctuation">,</span> <span class="token builtin">help</span><span class="token operator">=</span><span class="token string">'Input file name'</span><span class="token punctuation">)</span>
+parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'output_dir'</span><span class="token punctuation">,</span> <span class="token builtin">help</span><span class="token operator">=</span><span class="token string">'Output directory'</span><span class="token punctuation">)</span>
+</code></pre>
+<ol start="4">
+<li>Parse the command-line arguments:</li>
+</ol>
+<pre class="language-python"><code class="language-python">args <span class="token operator">=</span> parser<span class="token punctuation">.</span>parse_args<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<ol start="5">
+<li>Access the values of the arguments entered by the user:</li>
+</ol>
+<pre class="language-python"><code class="language-python">filename <span class="token operator">=</span> args<span class="token punctuation">.</span>filename
+output_dir <span class="token operator">=</span> args<span class="token punctuation">.</span>output_dir
+</code></pre>
+<ol start="6">
+<li>Use the obtained values in your program as needed.</li>
+</ol>
+<p>Here's a complete example that puts it all together:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> argparse
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># Step 2: Create an ArgumentParser instance</span>
+    parser <span class="token operator">=</span> argparse<span class="token punctuation">.</span>ArgumentParser<span class="token punctuation">(</span>description<span class="token operator">=</span><span class="token string">'Process input file and output directory.'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment"># Step 3: Define command-line arguments</span>
+    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'filename'</span><span class="token punctuation">,</span> <span class="token builtin">help</span><span class="token operator">=</span><span class="token string">'Input file name'</span><span class="token punctuation">)</span>
+    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'output_dir'</span><span class="token punctuation">,</span> <span class="token builtin">help</span><span class="token operator">=</span><span class="token string">'Output directory'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment"># Step 4: Parse the command-line arguments</span>
+    args <span class="token operator">=</span> parser<span class="token punctuation">.</span>parse_args<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token comment"># Step 5: Access the values of the arguments</span>
+    filename <span class="token operator">=</span> args<span class="token punctuation">.</span>filename
+    output_dir <span class="token operator">=</span> args<span class="token punctuation">.</span>output_dir
+    
+    <span class="token comment"># Step 6: Use the obtained values</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Input file:"</span><span class="token punctuation">,</span> filename<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Output directory:"</span><span class="token punctuation">,</span> output_dir<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>To run this program from the command line, you would provide the filename and output directory as arguments. For example:</p>
+<pre><code>$ python your_program.py input_file.txt /path/to/output/
+</code></pre>
+<p>Make sure to replace "your_program.py" with the actual filename of your Python script, "input_file.txt" with the desired filename, and "/path/to/output/" with the desired output directory.</p>
+<hr>
+<p><strong>Respueta generada automáticamente por ChatGPT4</strong> </p>
