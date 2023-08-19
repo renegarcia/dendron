@@ -2,9 +2,13 @@
 id: 1fm4dncuybvd5vqj931b01n
 title: Coding tips for the R programming language
 desc: ''
-updated: 1692464690591
+updated: 1692472811162
 created: 1692464253688
 ---
+
+# Where to find help
+
+Start here: https://rdrr.io/
 
 # Load R script into session
 
