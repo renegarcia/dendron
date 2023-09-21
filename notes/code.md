@@ -2,10 +2,31 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1687107935898
+updated: 1695329086568
 created: 1685471254996
 ---
 
+
+# Clone only the latest commit of a Git repository
+
+```bash
+git clone --depth 1 <url>
+```
+
+If you need an specific commit, you can obtain it with the `git checkout` 
+command:
+
+```bash
+git checkout <commit_hash>
+```
+
+## Source
+
+1. Bing AI Chat, 21/9/2023.
+2. [Copie un repositorio de git sin historial - QA Stack.](https://qastack.mx/programming/29368837/copy-a-git-repo-without-history)
+3. [Clonar repositorio remoto de git hasta cierto commit.](https://es.stackoverflow.com/questions/91014/clonar-repositorio-remoto-de-git-hasta-cierto-commit)
+4. [Regresar un repositorio a un commit especifico - Stack Overflow.](https://es.stackoverflow.com/questions/1458/regresar-un-repositorio-a-un-commit-especifico)
+5. [Atlassian Git Tutorial.](https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-clone)
 
 # Edit Git Remote URL 
 
