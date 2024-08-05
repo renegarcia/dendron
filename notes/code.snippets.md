@@ -2,9 +2,24 @@
 id: cfm4n435nhmnbubcoi8a356
 title: Code Snippets
 desc: ''
-updated: 1689264389972
+updated: 1700232469316
 created: 1689264140093
 ---
+
+# Creating secret keys from the command line
+
+Within linux
+
+```sh
+openssl rand -base64 32
+```
+
+With python
+
+```python
+import secrets
+secrets.token_hex(24)
+```
 
 # How to set gnome wallpaper using the command line
 
@@ -12,9 +27,7 @@ created: 1689264140093
 gsettings set org.gnome.desktop.background picture-uri file:///path/to/image
 ```
 
-
 ## Setting bing's image of the day as wallpaper
-
 
 ```sh
 wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/<[^>]*>//g' | cut -d / -f2 | cut -d \& -f1)"
