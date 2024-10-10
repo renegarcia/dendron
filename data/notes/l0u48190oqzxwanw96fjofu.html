@@ -1,0 +1,23 @@
+<h1 id="password-generator">Password generator<a aria-hidden="true" class="anchor-heading icon-link" href="#password-generator"></a></h1>
+<h3 id="resultado">Resultado<a aria-hidden="true" class="anchor-heading icon-link" href="#resultado"></a></h3>
+<script src="https://gist.github.com/renegarcia/2ba8eebc987ee99c2c4ce5ff2ee75081.js"></script>
+<h3 id="detalles">Detalles<a aria-hidden="true" class="anchor-heading icon-link" href="#detalles"></a></h3>
+<p>Necesitamos utilizar los paquetes <code>string</code> y <code>secrets</code>.</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> secrets <span class="token keyword">import</span> choice
+<span class="token keyword">import</span> string
+</code></pre>
+<p>A continuación definimos el alfabeto y la función generadora.</p>
+<pre class="language-python"><code class="language-python">ALPHABET <span class="token operator">=</span> string<span class="token punctuation">.</span>ascii_letters <span class="token operator">+</span> string<span class="token punctuation">.</span>digits <span class="token operator">+</span> string<span class="token punctuation">.</span>punctuation
+
+<span class="token keyword">def</span> <span class="token function">password_generator</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">:</span><span class="token builtin">int</span> <span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> alphabet<span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">]</span> <span class="token operator">=</span> ALPHABET<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">str</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>choice<span class="token punctuation">(</span>alphabet<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="referencias">Referencias<a aria-hidden="true" class="anchor-heading icon-link" href="#referencias"></a></h3>
+<ol>
+<li>
+<p><a href="https://docs.python.org/3/library/secrets.html">https://docs.python.org/3/library/secrets.html</a></p>
+</li>
+<li>
+<p><a href="https://gist.github.com/renegarcia/2ba8eebc987ee99c2c4ce5ff2ee75081">https://gist.github.com/renegarcia/2ba8eebc987ee99c2c4ce5ff2ee75081</a></p>
+</li>
+</ol>
