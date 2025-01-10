@@ -2,7 +2,7 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1736534236014
+updated: 1736534705971
 created: 1685471254996
 ---
 
@@ -11,7 +11,8 @@ created: 1685471254996
 ```bash
 pnpm dlx sv create my-app
 cd my-app
-pnpm install
+git init && git add -A # (optional)
+pnpm run dev
 ```
 
 ## How to install strapi
