@@ -2,9 +2,17 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1736528027505
+updated: 1736534236014
 created: 1685471254996
 ---
+
+## Create a new sveltekit project
+
+```bash
+pnpm dlx sv create my-app
+cd my-app
+pnpm install
+```
 
 ## How to install strapi
 
