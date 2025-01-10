@@ -2,12 +2,19 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1722957682054
+updated: 1736528027505
 created: 1685471254996
 ---
 
+## How to install strapi
 
-# Clone only the latest commit of a Git repository
+```bash
+pnpm dlx create-strapi-app@latest
+```
+
+See [strapi.io](https://strapi.io) for details.
+
+## Clone only the latest commit of a Git repository
 
 ```bash
 git clone --depth 1 <url>
