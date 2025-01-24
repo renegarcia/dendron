@@ -2,9 +2,20 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1736534705971
+updated: 1737734696349
 created: 1685471254996
 ---
+
+## Biblatex bibliography trick
+
+To change the `url` biblatex entry string from _retrieved from_ to _available at_, do this:
+
+```latex
+\DefineBibliographyStrings{english}{%
+   retrieved = {available},
+   from = {at},
+}
+```
 
 ## Create a new sveltekit project
 
