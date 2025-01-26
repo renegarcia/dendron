@@ -1,8 +1,30 @@
 ---
 id: hwyvw05ski3srgkxy31ym7w
 title: Python
-desc: ''
-updated: 1685476629841
+desc: 'Python recipes'
+updated: 1737921357397
 created: 1685474715630
 ---
 
+## Methods to Convert XML to JSON
+
+```python
+import xmltodict
+import json
+import os
+
+# Directorio con tus archivos XML
+directorio = 'ruta/a/tus/facturas'
+
+# Procesar cada archivo XML
+for archivo in os.listdir(directorio):
+    if archivo.endswith('.xml'):
+        with open(os.path.join(directorio, archivo), 'r') as xml_file:
+            xml_content = xml_file.read()
+            datos_json = xmltodict.parse(xml_content)
+            
+            # Guardar como archivo JSON
+            with open(archivo.replace('.xml', '.json'), 'w') as json_file:
+                json.dump(datos_json, json_file, indent=4)
+
+```
