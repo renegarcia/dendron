@@ -2,9 +2,55 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1737734696349
+updated: 1743091729520
 created: 1685471254996
 ---
+
+## Customize Latex Workshop extenral viewer
+
+In Vscode the following configuration works well with Latex workshop.
+
+
+### Sumatra
+
+```json
+{
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex": "sumatrapdf",
+    "latex-workshop.view.pdf.external.synctex.args": [
+    "-forward-search",
+    "%TEX%",
+    "%LINE%",
+    "-reuse-instance",
+    "-inverse-search",
+    "\"C:\\Users\\<Username>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\<U>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
+    "%PDF%"
+  ]
+}
+```
+
+### Sioyek
+
+```json
+{
+    "latex-workshop.view.pdf.external.viewer.command": "C:\\path\\to\\sioyek\\sioyek.exe",
+    "latex-workshop.view.pdf.external.synctex.command": "C:\\path\\to\\sioyek\\sioyek.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "--inverse-search",
+        "\"C:\\path\\to\\vscode\\Code.exe\" \"C:\\path\\to\\vscode\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%1:%2\"",
+        "--reuse-instance",
+        "--forward-search-file",
+        "%TEX%",
+        "--forward-search-line",
+        "%LINE%",
+        "%PDF%"
+    ]
+}
+```
 
 ## Biblatex bibliography trick
 
