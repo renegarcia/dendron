@@ -2,11 +2,11 @@
 id: 631hw9oh0k8jhc0wlm0joyz
 title: Coding tips
 desc: ''
-updated: 1743091729520
+updated: 1743180531852
 created: 1685471254996
 ---
 
-## Customize Latex Workshop extenral viewer
+## Customize Latex Workshop external viewer
 
 In Vscode the following configuration works well with Latex workshop.
 
