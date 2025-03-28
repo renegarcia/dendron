@@ -1,0 +1,282 @@
+{
+  "roots": [
+    {
+      "key": "631hw9oh0k8jhc0wlm0joyz",
+      "title": "Coding tips",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "rckztplnjk566zxgkjdtzhl",
+          "title": "Julia",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "ziizr10bs55a7fbr3fc61sc",
+          "title": "Power Shell",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "hwyvw05ski3srgkxy31ym7w",
+          "title": "Python",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": [
+            {
+              "key": "gznvznjzcsize57jmnzk130",
+              "title": "How to use Argparse",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "cwab3v7c5fbe9heqos93k0e",
+              "title": "Best Practices",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "01t8dold57nwpw63e18ba80",
+              "title": "Django",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "l0u48190oqzxwanw96fjofu",
+              "title": "Password generator",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "qpru2s8dnotjix9okh0haqe",
+              "title": "Recomended tools to build python software",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "xerksxa0wc8wxg4wymgrp0i",
+              "title": "Projects",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "6zw1kq25fhhqug5i45y1srj",
+              "title": "Como extraer metadatos del volcado de una base de datos",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "z2m9aey7liflnpmzo3gh61z",
+              "title": "Remove punctuation symbols from string",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "vvdgu21ycbtn2zfytwremiy",
+              "title": "Testing",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "g4q8yp5c8b2h1nlehk01cxt",
+              "title": "URL to title",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "1fm4dncuybvd5vqj931b01n",
+          "title": "Coding tips for the R programming language",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "j9wmd96lxohstbdavjirhbo",
+          "title": "Ruby",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "cfm4n435nhmnbubcoi8a356",
+          "title": "Code Snippets",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "rzreoc67l24hzknyqbn3a9b",
+      "title": "Mathematics",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "n2m0ds94d0uzg0x1csytrx7",
+          "title": "Conformal metrics on the complex plane",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "t2bfwjqhoxkkwhyg0gr6zu1",
+          "title": "Gauss Lemma",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "wtmpxm3f3919t10dpt69ou6",
+          "title": "General properties of groups of isometries in metric spaces",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "up4ubxunbdux2svvz1qnd1d",
+          "title": "Metric computations on hyperbolic plane",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "4ib3864gpor4t5mzmwo16aa",
+          "title": "Moment maps",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "uuyqov1hs5sb3utx886uefv",
+          "title": "Sol Manifolds",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "4k7eb68p8o3ctljv6pl0g3q",
+          "title": "Stats",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": [
+            {
+              "key": "zmvhm0w2tjs2njii7b7nrm5",
+              "title": "Stochastic Differential Equations",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "djvtrj1a2t17ct5gc45drcv",
+          "title": "Volume of the Moduli of Vortices",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "631hw9oh0k8jhc0wlm0joyz": null,
+    "rckztplnjk566zxgkjdtzhl": "631hw9oh0k8jhc0wlm0joyz",
+    "ziizr10bs55a7fbr3fc61sc": "631hw9oh0k8jhc0wlm0joyz",
+    "hwyvw05ski3srgkxy31ym7w": "631hw9oh0k8jhc0wlm0joyz",
+    "gznvznjzcsize57jmnzk130": "hwyvw05ski3srgkxy31ym7w",
+    "cwab3v7c5fbe9heqos93k0e": "hwyvw05ski3srgkxy31ym7w",
+    "01t8dold57nwpw63e18ba80": "hwyvw05ski3srgkxy31ym7w",
+    "l0u48190oqzxwanw96fjofu": "hwyvw05ski3srgkxy31ym7w",
+    "qpru2s8dnotjix9okh0haqe": "hwyvw05ski3srgkxy31ym7w",
+    "xerksxa0wc8wxg4wymgrp0i": "hwyvw05ski3srgkxy31ym7w",
+    "6zw1kq25fhhqug5i45y1srj": "hwyvw05ski3srgkxy31ym7w",
+    "z2m9aey7liflnpmzo3gh61z": "hwyvw05ski3srgkxy31ym7w",
+    "vvdgu21ycbtn2zfytwremiy": "hwyvw05ski3srgkxy31ym7w",
+    "g4q8yp5c8b2h1nlehk01cxt": "hwyvw05ski3srgkxy31ym7w",
+    "1fm4dncuybvd5vqj931b01n": "631hw9oh0k8jhc0wlm0joyz",
+    "j9wmd96lxohstbdavjirhbo": "631hw9oh0k8jhc0wlm0joyz",
+    "cfm4n435nhmnbubcoi8a356": "631hw9oh0k8jhc0wlm0joyz",
+    "rzreoc67l24hzknyqbn3a9b": null,
+    "n2m0ds94d0uzg0x1csytrx7": "rzreoc67l24hzknyqbn3a9b",
+    "t2bfwjqhoxkkwhyg0gr6zu1": "rzreoc67l24hzknyqbn3a9b",
+    "wtmpxm3f3919t10dpt69ou6": "rzreoc67l24hzknyqbn3a9b",
+    "up4ubxunbdux2svvz1qnd1d": "rzreoc67l24hzknyqbn3a9b",
+    "4ib3864gpor4t5mzmwo16aa": "rzreoc67l24hzknyqbn3a9b",
+    "uuyqov1hs5sb3utx886uefv": "rzreoc67l24hzknyqbn3a9b",
+    "4k7eb68p8o3ctljv6pl0g3q": "rzreoc67l24hzknyqbn3a9b",
+    "zmvhm0w2tjs2njii7b7nrm5": "4k7eb68p8o3ctljv6pl0g3q",
+    "djvtrj1a2t17ct5gc45drcv": "rzreoc67l24hzknyqbn3a9b"
+  },
+  "notesLabelById": {
+    "631hw9oh0k8jhc0wlm0joyz": "Coding tips",
+    "rckztplnjk566zxgkjdtzhl": "Julia",
+    "ziizr10bs55a7fbr3fc61sc": "Power Shell",
+    "hwyvw05ski3srgkxy31ym7w": "Python",
+    "gznvznjzcsize57jmnzk130": "How to use Argparse",
+    "cwab3v7c5fbe9heqos93k0e": "Best Practices",
+    "01t8dold57nwpw63e18ba80": "Django",
+    "l0u48190oqzxwanw96fjofu": "Password generator",
+    "qpru2s8dnotjix9okh0haqe": "Recomended tools to build python software",
+    "xerksxa0wc8wxg4wymgrp0i": "Projects",
+    "6zw1kq25fhhqug5i45y1srj": "Como extraer metadatos del volcado de una base de datos",
+    "z2m9aey7liflnpmzo3gh61z": "Remove punctuation symbols from string",
+    "vvdgu21ycbtn2zfytwremiy": "Testing",
+    "g4q8yp5c8b2h1nlehk01cxt": "URL to title",
+    "1fm4dncuybvd5vqj931b01n": "Coding tips for the R programming language",
+    "j9wmd96lxohstbdavjirhbo": "Ruby",
+    "cfm4n435nhmnbubcoi8a356": "Code Snippets",
+    "rzreoc67l24hzknyqbn3a9b": "Mathematics",
+    "n2m0ds94d0uzg0x1csytrx7": "Conformal metrics on the complex plane",
+    "t2bfwjqhoxkkwhyg0gr6zu1": "Gauss Lemma",
+    "wtmpxm3f3919t10dpt69ou6": "General properties of groups of isometries in metric spaces",
+    "up4ubxunbdux2svvz1qnd1d": "Metric computations on hyperbolic plane",
+    "4ib3864gpor4t5mzmwo16aa": "Moment maps",
+    "uuyqov1hs5sb3utx886uefv": "Sol Manifolds",
+    "4k7eb68p8o3ctljv6pl0g3q": "Stats",
+    "zmvhm0w2tjs2njii7b7nrm5": "Stochastic Differential Equations",
+    "djvtrj1a2t17ct5gc45drcv": "Volume of the Moduli of Vortices"
+  }
+}

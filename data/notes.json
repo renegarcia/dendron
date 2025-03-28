@@ -1,0 +1,1510 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": "dependencies/github.com/renegarcia/eleventa-db",
+        "remote": {
+          "type": "git",
+          "url": "git@github.com:renegarcia/eleventa-db.git"
+        },
+        "selfContained": true,
+        "name": "eleventa-db"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1743180611988,
+      "created": 1743180611988,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "root": {
+      "id": "root",
+      "title": "Inicio",
+      "desc": "",
+      "updated": 1737734545982,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "29eefcfb54e9325926e3bd85ed2ed09f",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "631hw9oh0k8jhc0wlm0joyz",
+        "rzreoc67l24hzknyqbn3a9b"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "rzreoc67l24hzknyqbn3a9b": {
+      "id": "rzreoc67l24hzknyqbn3a9b",
+      "title": "Mathematics",
+      "desc": "Personal notes",
+      "updated": 1722882811897,
+      "created": 1685946339687,
+      "custom": {},
+      "fname": "math",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "685f1d5837b74f6b475b0d2923621629",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "n2m0ds94d0uzg0x1csytrx7",
+        "t2bfwjqhoxkkwhyg0gr6zu1",
+        "wtmpxm3f3919t10dpt69ou6",
+        "up4ubxunbdux2svvz1qnd1d",
+        "4ib3864gpor4t5mzmwo16aa",
+        "uuyqov1hs5sb3utx886uefv",
+        "4k7eb68p8o3ctljv6pl0g3q",
+        "djvtrj1a2t17ct5gc45drcv"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "djvtrj1a2t17ct5gc45drcv": {
+      "id": "djvtrj1a2t17ct5gc45drcv",
+      "title": "Volume of the Moduli of Vortices",
+      "desc": "The volume of the vortices of the O3-Sigma model ideas",
+      "updated": 1737556036792,
+      "created": 1737555988532,
+      "custom": {},
+      "fname": "math.volume-moduli-vortices",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "1a324eb065ef14fd38f5d7a1f0d150c4",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "4k7eb68p8o3ctljv6pl0g3q": {
+      "id": "4k7eb68p8o3ctljv6pl0g3q",
+      "title": "Stats",
+      "desc": "",
+      "updated": 1685946339689,
+      "created": 1685946339689,
+      "custom": {},
+      "fname": "math.stats",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f54a190589d2bb0e96eec42c44f13e92",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "zmvhm0w2tjs2njii7b7nrm5"
+      ],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "zmvhm0w2tjs2njii7b7nrm5": {
+      "id": "zmvhm0w2tjs2njii7b7nrm5",
+      "title": "Stochastic Differential Equations",
+      "desc": "",
+      "updated": 1685767136408,
+      "created": 1685765664047,
+      "custom": {},
+      "fname": "math.stats.stochastic-ode",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "daa96951f311f4a65898af30daedffdd",
+      "links": [],
+      "anchors": {
+        "stochastic-processes": {
+          "type": "header",
+          "text": "Stochastic processes",
+          "value": "stochastic-processes",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "brownian-movement-or-wiener-process": {
+          "type": "header",
+          "text": "Brownian movement or Wiener process",
+          "value": "brownian-movement-or-wiener-process",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "ito-integral": {
+          "type": "header",
+          "text": "Ito integral",
+          "value": "ito-integral",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 41,
+          "column": 0,
+          "depth": 3
+        },
+        "itos-stochastic-differential-equation": {
+          "type": "header",
+          "text": "Ito's stochastic differential equation",
+          "value": "itos-stochastic-differential-equation",
+          "line": 49,
+          "column": 0,
+          "depth": 2
+        },
+        "stochastic-maltus-model": {
+          "type": "header",
+          "text": "Stochastic maltus model",
+          "value": "stochastic-maltus-model",
+          "line": 75,
+          "column": 0,
+          "depth": 3
+        },
+        "numerical-methods": {
+          "type": "header",
+          "text": "Numerical methods",
+          "value": "numerical-methods",
+          "line": 97,
+          "column": 0,
+          "depth": 3
+        },
+        "i-euler-murayama-method": {
+          "type": "header",
+          "text": "I. Euler-Murayama method",
+          "value": "i-euler-murayama-method",
+          "line": 99,
+          "column": 0,
+          "depth": 4
+        },
+        "ii-milstein-method": {
+          "type": "header",
+          "text": "II. Milstein method",
+          "value": "ii-milstein-method",
+          "line": 108,
+          "column": 0,
+          "depth": 4
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 121,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "4k7eb68p8o3ctljv6pl0g3q",
+      "data": {}
+    },
+    "uuyqov1hs5sb3utx886uefv": {
+      "id": "uuyqov1hs5sb3utx886uefv",
+      "title": "Sol Manifolds",
+      "desc": "A description of SOL manifolds from the point of view of geometry",
+      "updated": 1723151576700,
+      "created": 1723135136636,
+      "custom": {},
+      "fname": "math.sol-manifolds",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "9d6ae1a9a2e9d2a950f4d3bebd023ce1",
+      "links": [],
+      "anchors": {
+        "volume-entropy": {
+          "type": "header",
+          "text": "Volume entropy",
+          "value": "volume-entropy",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "an-upper-bound-for-the-entropy": {
+          "type": "header",
+          "text": "An upper bound for the entropy",
+          "value": "an-upper-bound-for-the-entropy",
+          "line": 42,
+          "column": 0,
+          "depth": 3
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 55,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "4ib3864gpor4t5mzmwo16aa": {
+      "id": "4ib3864gpor4t5mzmwo16aa",
+      "title": "Moment maps",
+      "desc": "",
+      "updated": 1717902426641,
+      "created": 1717889814496,
+      "custom": {},
+      "fname": "math.moment_maps",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "a55686d6b9802a8406f085c10b22b8ad",
+      "links": [],
+      "anchors": {
+        "holomorphic-and-hamiltonian-group-actions-on-the-sphere": {
+          "type": "header",
+          "text": "Holomorphic and Hamiltonian group actions on the sphere",
+          "value": "holomorphic-and-hamiltonian-group-actions-on-the-sphere",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "up4ubxunbdux2svvz1qnd1d": {
+      "id": "up4ubxunbdux2svvz1qnd1d",
+      "title": "Metric computations on hyperbolic plane",
+      "desc": "The volume of geodesic balls is computed on hyperbolic space. These are   known computations I collected from elsewhere.",
+      "updated": 1722882814420,
+      "created": 1722882766818,
+      "custom": {},
+      "fname": "math.metric-computations-hyperbolic-plane",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f26f30fe19912242cccd5a801a691f20",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "wtmpxm3f3919t10dpt69ou6": {
+      "id": "wtmpxm3f3919t10dpt69ou6",
+      "title": "General properties of groups of isometries in metric spaces",
+      "desc": "A few results about limit sets independent of curvature in ambient space",
+      "updated": 1722959946333,
+      "created": 1722959645258,
+      "custom": {},
+      "fname": "math.groups-isometries-metric-spaces",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "faf3b981ad769a9ab21e6ecba6afad5e",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "math.groups-isometries-metric-spaces",
+            "id": "wtmpxm3f3919t10dpt69ou6",
+            "vaultName": "Dendron"
+          },
+          "value": "user.eq-proper-action-equiv",
+          "alias": "@eq-proper-action-equiv",
+          "position": {
+            "start": {
+              "line": 16,
+              "column": 93,
+              "offset": 554
+            },
+            "end": {
+              "line": 16,
+              "column": 116,
+              "offset": 577
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.eq-proper-action-equiv"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "math.groups-isometries-metric-spaces",
+            "id": "wtmpxm3f3919t10dpt69ou6",
+            "vaultName": "Dendron"
+          },
+          "value": "user.scott1983",
+          "alias": "@scott1983",
+          "position": {
+            "start": {
+              "line": 16,
+              "column": 158,
+              "offset": 619
+            },
+            "end": {
+              "line": 16,
+              "column": 168,
+              "offset": 629
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.scott1983"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "math.groups-isometries-metric-spaces",
+            "id": "wtmpxm3f3919t10dpt69ou6",
+            "vaultName": "Dendron"
+          },
+          "value": "user.quint.",
+          "alias": "@quint.",
+          "position": {
+            "start": {
+              "line": 93,
+              "column": 37,
+              "offset": 5312
+            },
+            "end": {
+              "line": 93,
+              "column": 44,
+              "offset": 5319
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.quint."
+          }
+        }
+      ],
+      "anchors": {
+        "definitions": {
+          "type": "header",
+          "text": "Definitions",
+          "value": "definitions",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "discrete-subgroups-of-isometries": {
+          "type": "header",
+          "text": "Discrete subgroups of isometries",
+          "value": "discrete-subgroups-of-isometries",
+          "line": 24,
+          "column": 0,
+          "depth": 3
+        },
+        "critical-exponent-of-groups-of-isometries": {
+          "type": "header",
+          "text": "Critical exponent of groups of isometries",
+          "value": "critical-exponent-of-groups-of-isometries",
+          "line": 67,
+          "column": 0,
+          "depth": 2
+        },
+        "the-visual-boundary-in-a-metric-space": {
+          "type": "header",
+          "text": "The visual boundary in a metric space",
+          "value": "the-visual-boundary-in-a-metric-space",
+          "line": 124,
+          "column": 0,
+          "depth": 2
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 138,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "t2bfwjqhoxkkwhyg0gr6zu1": {
+      "id": "t2bfwjqhoxkkwhyg0gr6zu1",
+      "title": "Gauss Lemma",
+      "desc": "The Gauss Lemma",
+      "updated": 1728590814116,
+      "created": 1728589619296,
+      "custom": {},
+      "fname": "math.gauss-lemma",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "fd7d0a088db7a60867093b98d09cd65f",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "math.gauss-lemma",
+            "id": "t2bfwjqhoxkkwhyg0gr6zu1",
+            "vaultName": "Dendron"
+          },
+          "value": "math.gauss-lemma",
+          "position": {
+            "start": {
+              "line": 7,
+              "column": 20,
+              "offset": 439
+            },
+            "end": {
+              "line": 7,
+              "column": 38,
+              "offset": 457
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": true,
+          "to": {
+            "fname": "math.gauss-lemma",
+            "anchorHeader": "^2jt9t3lzefrk"
+          }
+        },
+        {
+          "from": {
+            "fname": "math.gauss-lemma",
+            "id": "t2bfwjqhoxkkwhyg0gr6zu1",
+            "vaultName": "Dendron"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 7,
+              "column": 20,
+              "offset": 439
+            },
+            "end": {
+              "line": 7,
+              "column": 38,
+              "offset": 457
+            },
+            "indent": []
+          },
+          "value": "math.gauss-lemma"
+        }
+      ],
+      "anchors": {
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "^2jt9t3lzefrk": {
+          "type": "block",
+          "value": "2jt9t3lzefrk",
+          "line": 17,
+          "column": 186
+        }
+      },
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "n2m0ds94d0uzg0x1csytrx7": {
+      "id": "n2m0ds94d0uzg0x1csytrx7",
+      "title": "Conformal metrics on the complex plane",
+      "desc": "I compute the curvature of a general conformal metric on the complex plane",
+      "updated": 1725501708792,
+      "created": 1723094456583,
+      "custom": {},
+      "fname": "math.conformal-metric-complex-plane",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "2ce025301d14e2047d979556776d9673",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "rzreoc67l24hzknyqbn3a9b",
+      "data": {}
+    },
+    "631hw9oh0k8jhc0wlm0joyz": {
+      "id": "631hw9oh0k8jhc0wlm0joyz",
+      "title": "Coding tips",
+      "desc": "",
+      "updated": 1743180531852,
+      "created": 1685471254996,
+      "custom": {},
+      "fname": "code",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "72ad9d93a35feb149a6e02e4e654c72a",
+      "links": [],
+      "anchors": {
+        "customize-latex-workshop-external-viewer": {
+          "type": "header",
+          "text": "Customize Latex Workshop external viewer",
+          "value": "customize-latex-workshop-external-viewer",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "sumatra": {
+          "type": "header",
+          "text": "Sumatra",
+          "value": "sumatra",
+          "line": 13,
+          "column": 0,
+          "depth": 3
+        },
+        "sioyek": {
+          "type": "header",
+          "text": "Sioyek",
+          "value": "sioyek",
+          "line": 35,
+          "column": 0,
+          "depth": 3
+        },
+        "biblatex-bibliography-trick": {
+          "type": "header",
+          "text": "Biblatex bibliography trick",
+          "value": "biblatex-bibliography-trick",
+          "line": 54,
+          "column": 0,
+          "depth": 2
+        },
+        "create-a-new-sveltekit-project": {
+          "type": "header",
+          "text": "Create a new sveltekit project",
+          "value": "create-a-new-sveltekit-project",
+          "line": 65,
+          "column": 0,
+          "depth": 2
+        },
+        "how-to-install-strapi": {
+          "type": "header",
+          "text": "How to install strapi",
+          "value": "how-to-install-strapi",
+          "line": 74,
+          "column": 0,
+          "depth": 2
+        },
+        "clone-only-the-latest-commit-of-a-git-repository": {
+          "type": "header",
+          "text": "Clone only the latest commit of a Git repository",
+          "value": "clone-only-the-latest-commit-of-a-git-repository",
+          "line": 82,
+          "column": 0,
+          "depth": 2
+        },
+        "source": {
+          "type": "header",
+          "text": "Source",
+          "value": "source",
+          "line": 95,
+          "column": 0,
+          "depth": 2
+        },
+        "edit-git-remote-url": {
+          "type": "header",
+          "text": "Edit Git Remote URL",
+          "value": "edit-git-remote-url",
+          "line": 103,
+          "column": 0,
+          "depth": 1
+        },
+        "django-tests-not-running": {
+          "type": "header",
+          "text": "Django tests not running",
+          "value": "django-tests-not-running",
+          "line": 112,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "rckztplnjk566zxgkjdtzhl",
+        "ziizr10bs55a7fbr3fc61sc",
+        "hwyvw05ski3srgkxy31ym7w",
+        "1fm4dncuybvd5vqj931b01n",
+        "j9wmd96lxohstbdavjirhbo",
+        "cfm4n435nhmnbubcoi8a356"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "cfm4n435nhmnbubcoi8a356": {
+      "id": "cfm4n435nhmnbubcoi8a356",
+      "title": "Code Snippets",
+      "desc": "",
+      "updated": 1700232469316,
+      "created": 1689264140093,
+      "custom": {},
+      "fname": "code.snippets",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "8c8d5a45b47d73933aef778e3500fd5f",
+      "links": [],
+      "anchors": {
+        "creating-secret-keys-from-the-command-line": {
+          "type": "header",
+          "text": "Creating secret keys from the command line",
+          "value": "creating-secret-keys-from-the-command-line",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "how-to-set-gnome-wallpaper-using-the-command-line": {
+          "type": "header",
+          "text": "How to set gnome wallpaper using the command line",
+          "value": "how-to-set-gnome-wallpaper-using-the-command-line",
+          "line": 23,
+          "column": 0,
+          "depth": 1
+        },
+        "setting-bings-image-of-the-day-as-wallpaper": {
+          "type": "header",
+          "text": "Setting bing's image of the day as wallpaper",
+          "value": "setting-bings-image-of-the-day-as-wallpaper",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    },
+    "j9wmd96lxohstbdavjirhbo": {
+      "id": "j9wmd96lxohstbdavjirhbo",
+      "title": "Ruby",
+      "desc": "",
+      "updated": 1686590194134,
+      "created": 1686590134777,
+      "custom": {},
+      "fname": "code.ruby",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "4bee4e234aa2eb2004b0a5e73ad98b18",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    },
+    "1fm4dncuybvd5vqj931b01n": {
+      "id": "1fm4dncuybvd5vqj931b01n",
+      "title": "Coding tips for the R programming language",
+      "desc": "",
+      "updated": 1692472811162,
+      "created": 1692464253688,
+      "custom": {},
+      "fname": "code.r",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "579d5bad4e4afc1e62bc78c72d921364",
+      "links": [],
+      "anchors": {
+        "where-to-find-help": {
+          "type": "header",
+          "text": "Where to find help",
+          "value": "where-to-find-help",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "load-r-script-into-session": {
+          "type": "header",
+          "text": "Load R script into session",
+          "value": "load-r-script-into-session",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    },
+    "hwyvw05ski3srgkxy31ym7w": {
+      "id": "hwyvw05ski3srgkxy31ym7w",
+      "title": "Python",
+      "desc": "Python recipes",
+      "updated": 1737921357397,
+      "created": 1685474715630,
+      "custom": {},
+      "fname": "code.python",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "3f1279f0099de4ee2f26284b26edba73",
+      "links": [],
+      "anchors": {
+        "methods-to-convert-xml-to-json": {
+          "type": "header",
+          "text": "Methods to Convert XML to JSON",
+          "value": "methods-to-convert-xml-to-json",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "gznvznjzcsize57jmnzk130",
+        "cwab3v7c5fbe9heqos93k0e",
+        "01t8dold57nwpw63e18ba80",
+        "l0u48190oqzxwanw96fjofu",
+        "qpru2s8dnotjix9okh0haqe",
+        "xerksxa0wc8wxg4wymgrp0i",
+        "6zw1kq25fhhqug5i45y1srj",
+        "z2m9aey7liflnpmzo3gh61z",
+        "vvdgu21ycbtn2zfytwremiy",
+        "g4q8yp5c8b2h1nlehk01cxt"
+      ],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    },
+    "g4q8yp5c8b2h1nlehk01cxt": {
+      "id": "g4q8yp5c8b2h1nlehk01cxt",
+      "title": "URL to title",
+      "desc": "",
+      "updated": 1685733865624,
+      "created": 1685733525402,
+      "custom": {},
+      "fname": "code.python.url-to-title",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "a8d00487a01c67c50b4be90772a6fadc",
+      "links": [],
+      "anchors": {
+        "code": {
+          "type": "header",
+          "text": "Code",
+          "value": "code",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "case-of-use": {
+          "type": "header",
+          "text": "Case of use",
+          "value": "case-of-use",
+          "line": 47,
+          "column": 0,
+          "depth": 1
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 67,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "vvdgu21ycbtn2zfytwremiy": {
+      "id": "vvdgu21ycbtn2zfytwremiy",
+      "title": "Testing",
+      "desc": "",
+      "updated": 1687289774366,
+      "created": 1687289451077,
+      "custom": {},
+      "fname": "code.python.testing",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "25c0804b4fe67341981fc05da3b914ef",
+      "links": [],
+      "anchors": {
+        "create-named-temporary-file": {
+          "type": "header",
+          "text": "Create named temporary file",
+          "value": "create-named-temporary-file",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "access-the-file-directory": {
+          "type": "header",
+          "text": "Access the file directory",
+          "value": "access-the-file-directory",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 39,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "z2m9aey7liflnpmzo3gh61z": {
+      "id": "z2m9aey7liflnpmzo3gh61z",
+      "title": "Remove punctuation symbols from string",
+      "desc": "",
+      "updated": 1685508624240,
+      "created": 1685507833820,
+      "custom": {},
+      "fname": "code.python.string_remove_punctuation",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f09f1bec00c7fbf2ff230e5708240ec3",
+      "links": [],
+      "anchors": {
+        "the-problem": {
+          "type": "header",
+          "text": "The problem",
+          "value": "the-problem",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "the-solution": {
+          "type": "header",
+          "text": "The solution",
+          "value": "the-solution",
+          "line": 14,
+          "column": 0,
+          "depth": 1
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 37,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "6zw1kq25fhhqug5i45y1srj": {
+      "id": "6zw1kq25fhhqug5i45y1srj",
+      "title": "Como extraer metadatos del volcado de una base de datos",
+      "desc": "",
+      "updated": 1685478604651,
+      "created": 1684612996461,
+      "custom": {},
+      "fname": "code.python.sqlparse",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "c048ad49104154ba39e89c879d9baf55",
+      "links": [],
+      "anchors": {
+        "resultado": {
+          "type": "header",
+          "text": "Resultado",
+          "value": "resultado",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "código": {
+          "type": "header",
+          "text": "Código",
+          "value": "código",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "extrayendo-el-nombre-de-una-definición-de-tabla": {
+          "type": "header",
+          "text": "Extrayendo el nombre de una definición de tabla",
+          "value": "extrayendo-el-nombre-de-una-definición-de-tabla",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        },
+        "método-para-obtener-el-nombre-de-la-tabla": {
+          "type": "header",
+          "text": "Método para obtener el nombre de la tabla",
+          "value": "método-para-obtener-el-nombre-de-la-tabla",
+          "line": 165,
+          "column": 0,
+          "depth": 3
+        },
+        "extrayendo-una-lista-de-tablas-y-sus-nombres": {
+          "type": "header",
+          "text": "Extrayendo una lista de tablas y sus nombres",
+          "value": "extrayendo-una-lista-de-tablas-y-sus-nombres",
+          "line": 186,
+          "column": 0,
+          "depth": 2
+        },
+        "determinando-el-tipo-de-objeto-creado": {
+          "type": "header",
+          "text": "Determinando el tipo de objeto creado",
+          "value": "determinando-el-tipo-de-objeto-creado",
+          "line": 245,
+          "column": 0,
+          "depth": 3
+        },
+        "extrayendo-el-nombre-y-tipo-de-objeto-creado-de-un-volcado-completo": {
+          "type": "header",
+          "text": "Extrayendo el nombre y tipo de objeto creado de un volcado completo",
+          "value": "extrayendo-el-nombre-y-tipo-de-objeto-creado-de-un-volcado-completo",
+          "line": 296,
+          "column": 0,
+          "depth": 3
+        },
+        "referencias": {
+          "type": "header",
+          "text": "Referencias",
+          "value": "referencias",
+          "line": 343,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "xerksxa0wc8wxg4wymgrp0i": {
+      "id": "xerksxa0wc8wxg4wymgrp0i",
+      "title": "Projects",
+      "desc": "",
+      "updated": 1685728709516,
+      "created": 1685727428092,
+      "custom": {},
+      "fname": "code.python.projects",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "93424eb32b319bbd7a49b05c8817b332",
+      "links": [],
+      "anchors": {
+        "how-to-specify-cli-scripts-in-a-pyproject-file": {
+          "type": "header",
+          "text": "How to specify cli scripts in a pyproject file",
+          "value": "how-to-specify-cli-scripts-in-a-pyproject-file",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "using-poetry": {
+          "type": "header",
+          "text": "Using poetry",
+          "value": "using-poetry",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "with-setup-tools": {
+          "type": "header",
+          "text": "With setup tools",
+          "value": "with-setup-tools",
+          "line": 70,
+          "column": 0,
+          "depth": 2
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 103,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "qpru2s8dnotjix9okh0haqe": {
+      "id": "qpru2s8dnotjix9okh0haqe",
+      "title": "Recomended tools to build python software",
+      "desc": "",
+      "updated": 1685733092275,
+      "created": 1685731303027,
+      "custom": {},
+      "fname": "code.python.pre-commit-black-flake8-isort",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "07abecae247c89b3e542bd05fe1e15aa",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "l0u48190oqzxwanw96fjofu": {
+      "id": "l0u48190oqzxwanw96fjofu",
+      "title": "Password generator",
+      "desc": "Como generar passwords",
+      "updated": 1685387560892,
+      "created": 1685385500530,
+      "custom": {},
+      "fname": "code.python.password_generator",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "0de1e1a5b291543cce42965405a65fd4",
+      "links": [],
+      "anchors": {
+        "resultado": {
+          "type": "header",
+          "text": "Resultado",
+          "value": "resultado",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "detalles": {
+          "type": "header",
+          "text": "Detalles",
+          "value": "detalles",
+          "line": 13,
+          "column": 0,
+          "depth": 3
+        },
+        "referencias": {
+          "type": "header",
+          "text": "Referencias",
+          "value": "referencias",
+          "line": 35,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "01t8dold57nwpw63e18ba80": {
+      "id": "01t8dold57nwpw63e18ba80",
+      "title": "Django",
+      "desc": "",
+      "updated": 1687309242924,
+      "created": 1687307760199,
+      "custom": {},
+      "fname": "code.python.django",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "83de0283272424622e8a31a3ba310ce9",
+      "links": [],
+      "anchors": {
+        "highlight-current-page-in-navbar": {
+          "type": "header",
+          "text": "Highlight current page in navbar",
+          "value": "highlight-current-page-in-navbar",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 38,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "cwab3v7c5fbe9heqos93k0e": {
+      "id": "cwab3v7c5fbe9heqos93k0e",
+      "title": "Best Practices",
+      "desc": "",
+      "updated": 1687284332737,
+      "created": 1687284123125,
+      "custom": {},
+      "fname": "code.python.bestpractices",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "0810a96c8767aa299f570f895a15f523",
+      "links": [],
+      "anchors": {
+        "linters": {
+          "type": "header",
+          "text": "Linters",
+          "value": "linters",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "formatters": {
+          "type": "header",
+          "text": "Formatters",
+          "value": "formatters",
+          "line": 16,
+          "column": 0,
+          "depth": 1
+        },
+        "references": {
+          "type": "header",
+          "text": "References",
+          "value": "references",
+          "line": 23,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "gznvznjzcsize57jmnzk130": {
+      "id": "gznvznjzcsize57jmnzk130",
+      "title": "How to use Argparse",
+      "desc": "",
+      "updated": 1685387842919,
+      "created": 1685387710591,
+      "custom": {},
+      "fname": "code.python.argparse",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "9b12efb2ef1955529fe1f30b6a5d77ff",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "hwyvw05ski3srgkxy31ym7w",
+      "data": {}
+    },
+    "ziizr10bs55a7fbr3fc61sc": {
+      "id": "ziizr10bs55a7fbr3fc61sc",
+      "title": "Power Shell",
+      "desc": "Coding tips for Power Shell",
+      "updated": 1722957592435,
+      "created": 1722957069175,
+      "custom": {},
+      "fname": "code.power-shell",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "aebfd02c3149889945d9dfc3c2c02957",
+      "links": [
+        {
+          "from": {
+            "fname": "code.julia",
+            "id": "rckztplnjk566zxgkjdtzhl",
+            "vaultName": "Dendron"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 260
+            },
+            "end": {
+              "line": 8,
+              "column": 21,
+              "offset": 280
+            },
+            "indent": []
+          },
+          "value": "code.power-shell"
+        }
+      ],
+      "anchors": {
+        "add-an-executable-to-the-path": {
+          "type": "header",
+          "text": "Add an executable to the Path",
+          "value": "add-an-executable-to-the-path",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "method-1-using-the-path-environment-variable-temporary": {
+          "type": "header",
+          "text": "Method 1: Using the PATH Environment Variable (Temporary)",
+          "value": "method-1-using-the-path-environment-variable-temporary",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "method-3-using-a-powershell-profile": {
+          "type": "header",
+          "text": "Method 3: Using a PowerShell Profile",
+          "value": "method-3-using-a-powershell-profile",
+          "line": 24,
+          "column": 0,
+          "depth": 3
+        },
+        "source": {
+          "type": "header",
+          "text": "Source",
+          "value": "source",
+          "line": 37,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    },
+    "rckztplnjk566zxgkjdtzhl": {
+      "id": "rckztplnjk566zxgkjdtzhl",
+      "title": "Julia",
+      "desc": "Julia tips",
+      "updated": 1723534010770,
+      "created": 1723533776403,
+      "custom": {},
+      "fname": "code.julia",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "a01532b527a1605bd18ade828d8eb235",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "code.julia",
+            "id": "rckztplnjk566zxgkjdtzhl",
+            "vaultName": "Dendron"
+          },
+          "value": "code.power-shell",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 260
+            },
+            "end": {
+              "line": 8,
+              "column": 21,
+              "offset": 280
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "code.power-shell"
+          }
+        }
+      ],
+      "anchors": {
+        "how-to-change-the-location-of-the-default-installation-package-for-julia": {
+          "type": "header",
+          "text": "How to change the location of the default installation package for julia",
+          "value": "how-to-change-the-location-of-the-default-installation-package-for-julia",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "source": {
+          "type": "header",
+          "text": "Source",
+          "value": "source",
+          "line": 20,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "631hw9oh0k8jhc0wlm0joyz",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "root",
+      "title": "Inicio",
+      "desc": "",
+      "updated": 1737734545982,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "29eefcfb54e9325926e3bd85ed2ed09f",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "631hw9oh0k8jhc0wlm0joyz",
+        "rzreoc67l24hzknyqbn3a9b"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\nWelcome to my notes space, this site is a collection of disorganized notes related to my work. Feel free to explore, if you find any of this, useful simply copy/paste or share. \n\nHave fun,\n\nIsra.\n\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "root",
+    "title": "Inicio",
+    "desc": "",
+    "updated": 1737734545982,
+    "created": 1595961348801,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "Dendron"
+    },
+    "contentHash": "29eefcfb54e9325926e3bd85ed2ed09f",
+    "links": [],
+    "anchors": {},
+    "children": [
+      "631hw9oh0k8jhc0wlm0joyz",
+      "rzreoc67l24hzknyqbn3a9b"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\nWelcome to my notes space, this site is a collection of disorganized notes related to my work. Feel free to explore, if you find any of this, useful simply copy/paste or share. \n\nHave fun,\n\nIsra.\n\n"
+  },
+  "vaults": [
+    {
+      "fsPath": "dependencies/github.com/renegarcia/eleventa-db",
+      "remote": {
+        "type": "git",
+        "url": "git@github.com:renegarcia/eleventa-db.git"
+      },
+      "selfContained": true,
+      "name": "eleventa-db"
+    },
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "Dendron"
+    }
+  ]
+}

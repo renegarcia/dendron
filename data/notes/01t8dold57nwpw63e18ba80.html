@@ -1,0 +1,26 @@
+<h1 id="django">Django<a aria-hidden="true" class="anchor-heading icon-link" href="#django"></a></h1>
+<h1 id="highlight-current-page-in-navbar">Highlight current page in navbar<a aria-hidden="true" class="anchor-heading icon-link" href="#highlight-current-page-in-navbar"></a></h1>
+<p>You can get the name of the url (referenced in your urlpatterns). Then set the 'active' class if the url matches.</p>
+<pre class="language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">with</span> url_name<span class="token operator">=</span>request<span class="token punctuation">.</span>resolver_match<span class="token punctuation">.</span>url_name <span class="token operator">%</span><span class="token punctuation">}</span>
+<span class="token operator">&#x3C;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"dropdown {% if url_name == 'index' %}active{% endif %}"</span>
+   <span class="token operator">&#x3C;</span>a href<span class="token operator">=</span><span class="token string">"{% url 'index' %}"</span> <span class="token operator">></span>Home <span class="token operator">&#x3C;</span><span class="token operator">/</span>a<span class="token operator">></span>
+<span class="token operator">&#x3C;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token operator">&#x3C;</span>li<span class="token operator">></span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&#x3C;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token operator">%</span> endwith <span class="token operator">%</span><span class="token punctuation">}</span>
+</code></pre>
+<p>In practice it is also useful to prepend the app_name into the path, por example, there
+might be the <code>about:index</code> page and the <code>home:index</code> page, which both have the same
+<code>url_name</code> as of <code>Django 4.2</code>. In order to deal with this case, we also get the app name
+from the resolver,</p>
+<pre class="language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">with</span> app_name<span class="token operator">=</span>request<span class="token punctuation">.</span>resolver_match<span class="token punctuation">.</span>app_names<span class="token punctuation">.</span><span class="token number">0</span> url_name<span class="token operator">=</span>request<span class="token punctuation">.</span>resolver_match<span class="token punctuation">.</span>url_name <span class="token operator">%</span><span class="token punctuation">}</span>
+<span class="token operator">&#x3C;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"dropdown {% if app_name == 'home' and url_name == 'index' %}active{% endif %}"</span>
+   <span class="token operator">&#x3C;</span>a href<span class="token operator">=</span><span class="token string">"{% url 'home:index' %}"</span> <span class="token operator">></span>Home <span class="token operator">&#x3C;</span><span class="token operator">/</span>a<span class="token operator">></span>
+<span class="token operator">&#x3C;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token operator">&#x3C;</span>li<span class="token operator">></span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&#x3C;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">{</span><span class="token operator">%</span> endwith <span class="token operator">%</span><span class="token punctuation">}</span>
+</code></pre>
+<h1 id="references">References<a aria-hidden="true" class="anchor-heading icon-link" href="#references"></a></h1>
+<ol>
+<li><a href="https://stackoverflow.com/questions/39639264/django-highlight-current-page-in-navbar">Django: Highlight current page in navbar</a></li>
+<li><a href="https://stackoverflow.com/questions/19261269/get-app-name-from-url-in-django">get app name from url in django</a></li>
+</ol>

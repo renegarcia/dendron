@@ -1,0 +1,33 @@
+<h1 id="power-shell">Power Shell<a aria-hidden="true" class="anchor-heading icon-link" href="#power-shell"></a></h1>
+<h2 id="add-an-executable-to-the-path">Add an executable to the Path<a aria-hidden="true" class="anchor-heading icon-link" href="#add-an-executable-to-the-path"></a></h2>
+<p>To add an executable to PowerShell's path, you'll need to update the PATH environment variable. Here are the steps:</p>
+<h3 id="method-1-using-the-path-environment-variable-temporary">Method 1: Using the PATH Environment Variable (Temporary)<a aria-hidden="true" class="anchor-heading icon-link" href="#method-1-using-the-path-environment-variable-temporary"></a></h3>
+<p>You can update the PATH variable for the current PowerShell session by running:</p>
+<pre class="language-powershell"><code class="language-powershell"><span class="token variable">$env</span>:PATH <span class="token operator">+=</span> <span class="token string">";C:\Path\To\Executable"</span>
+</code></pre>
+<p>Replace <code>C:\Path\To\Executable</code> with the actual path to the executable you want to add.</p>
+<p><strong>Note:</strong> This change is only temporary and will be lost when you close the PowerShell session.</p>
+<h3 id="method-3-using-a-powershell-profile">Method 3: Using a PowerShell Profile<a aria-hidden="true" class="anchor-heading icon-link" href="#method-3-using-a-powershell-profile"></a></h3>
+<p>You can also update the PATH variable by adding a line to your PowerShell profile. This method is useful if you want to keep your environment variables separate from your system settings.</p>
+<ol>
+<li>
+<p>Open your PowerShell profile file (usually located at <code>C:\Users\&#x3C;YourUsername>\Documents\WindowsPowerShell\profile.ps1</code>).</p>
+</li>
+<li>
+<p>Add the following line:</p>
+<pre class="language-powershell"><code class="language-powershell"><span class="token variable">$env</span>:PATH <span class="token operator">+=</span> <span class="token string">";C:\Path\To\Executable"</span>
+</code></pre>
+</li>
+<li>
+<p>Save the file and restart PowerShell.</p>
+</li>
+</ol>
+<h3 id="source">Source<a aria-hidden="true" class="anchor-heading icon-link" href="#source"></a></h3>
+<ol>
+<li><a href="https://www.blackbox.ai/share/b06ec1df-08af-4e70-bbbe-dcaecaec87f8">https://www.blackbox.ai/share/b06ec1df-08af-4e70-bbbe-dcaecaec87f8</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/dendron/notes/rckztplnjk566zxgkjdtzhl">Julia (Dendron)</a></li>
+</ul>

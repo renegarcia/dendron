@@ -1,0 +1,26 @@
+<h1 id="testing">Testing<a aria-hidden="true" class="anchor-heading icon-link" href="#testing"></a></h1>
+<h1 id="create-named-temporary-file">Create named temporary file<a aria-hidden="true" class="anchor-heading icon-link" href="#create-named-temporary-file"></a></h1>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> tempfile
+
+<span class="token keyword">def</span> <span class="token function">create_temp_file</span><span class="token punctuation">(</span>prefix<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    temp_file <span class="token operator">=</span> tempfile<span class="token punctuation">.</span>NamedTemporaryFile<span class="token punctuation">(</span>prefix<span class="token operator">=</span>prefix<span class="token punctuation">,</span> delete<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+    temp_file<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> temp_file<span class="token punctuation">.</span>name
+
+<span class="token comment"># Example usage</span>
+prefix <span class="token operator">=</span> <span class="token string">"my_prefix"</span>
+temp_file_path <span class="token operator">=</span> create_temp_file<span class="token punctuation">(</span>prefix<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Temporary file created:"</span><span class="token punctuation">,</span> temp_file_path<span class="token punctuation">)</span>
+</code></pre>
+<p>From the above code, note that the file path can be retrived with <code>temp_file.name</code>.</p>
+<h2 id="access-the-file-directory">Access the file directory<a aria-hidden="true" class="anchor-heading icon-link" href="#access-the-file-directory"></a></h2>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pathlib <span class="token keyword">import</span> Path 
+
+temp_file <span class="token operator">=</span> create_temp_file<span class="token punctuation">(</span><span class="token string">"my_prefix"</span><span class="token punctuation">)</span>
+path <span class="token operator">=</span> Path<span class="token punctuation">(</span>temp_file<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span>parent<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="references">References<a aria-hidden="true" class="anchor-heading icon-link" href="#references"></a></h1>
+<ol>
+<li><a href="https://chat.openai.com/share/abe75dba-545e-4e17-83db-b59d60ed8c98">Source</a></li>
+</ol>

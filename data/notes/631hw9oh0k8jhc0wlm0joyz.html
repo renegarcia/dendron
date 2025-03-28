@@ -1,0 +1,101 @@
+<h1 id="coding-tips">Coding tips<a aria-hidden="true" class="anchor-heading icon-link" href="#coding-tips"></a></h1>
+<h2 id="customize-latex-workshop-external-viewer">Customize Latex Workshop external viewer<a aria-hidden="true" class="anchor-heading icon-link" href="#customize-latex-workshop-external-viewer"></a></h2>
+<p>In Vscode the following configuration works well with Latex workshop.</p>
+<h3 id="sumatra">Sumatra<a aria-hidden="true" class="anchor-heading icon-link" href="#sumatra"></a></h3>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"latex-workshop.view.pdf.viewer"</span><span class="token operator">:</span> <span class="token string">"external"</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.viewer.command"</span><span class="token operator">:</span> <span class="token string">"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.viewer.args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"%PDF%"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.synctex"</span><span class="token operator">:</span> <span class="token string">"sumatrapdf"</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.synctex.args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"-forward-search"</span><span class="token punctuation">,</span>
+    <span class="token string">"%TEX%"</span><span class="token punctuation">,</span>
+    <span class="token string">"%LINE%"</span><span class="token punctuation">,</span>
+    <span class="token string">"-reuse-instance"</span><span class="token punctuation">,</span>
+    <span class="token string">"-inverse-search"</span><span class="token punctuation">,</span>
+    <span class="token string">"\"C:\\Users\\&#x3C;Username>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\&#x3C;U>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\""</span><span class="token punctuation">,</span>
+    <span class="token string">"%PDF%"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="sioyek">Sioyek<a aria-hidden="true" class="anchor-heading icon-link" href="#sioyek"></a></h3>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"latex-workshop.view.pdf.external.viewer.command"</span><span class="token operator">:</span> <span class="token string">"C:\\path\\to\\sioyek\\sioyek.exe"</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.synctex.command"</span><span class="token operator">:</span> <span class="token string">"C:\\path\\to\\sioyek\\sioyek.exe"</span><span class="token punctuation">,</span>
+    <span class="token property">"latex-workshop.view.pdf.external.synctex.args"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"--inverse-search"</span><span class="token punctuation">,</span>
+        <span class="token string">"\"C:\\path\\to\\vscode\\Code.exe\" \"C:\\path\\to\\vscode\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%1:%2\""</span><span class="token punctuation">,</span>
+        <span class="token string">"--reuse-instance"</span><span class="token punctuation">,</span>
+        <span class="token string">"--forward-search-file"</span><span class="token punctuation">,</span>
+        <span class="token string">"%TEX%"</span><span class="token punctuation">,</span>
+        <span class="token string">"--forward-search-line"</span><span class="token punctuation">,</span>
+        <span class="token string">"%LINE%"</span><span class="token punctuation">,</span>
+        <span class="token string">"%PDF%"</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="biblatex-bibliography-trick">Biblatex bibliography trick<a aria-hidden="true" class="anchor-heading icon-link" href="#biblatex-bibliography-trick"></a></h2>
+<p>To change the <code>url</code> biblatex entry string from <em>retrieved from</em> to <em>available at</em>, do this:</p>
+<pre class="language-latex"><code class="language-latex"><span class="token function selector">\DefineBibliographyStrings</span><span class="token punctuation">{</span>english<span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token comment">%</span>
+   retrieved = <span class="token punctuation">{</span>available<span class="token punctuation">}</span>,
+   from = <span class="token punctuation">{</span>at<span class="token punctuation">}</span>,
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="create-a-new-sveltekit-project">Create a new sveltekit project<a aria-hidden="true" class="anchor-heading icon-link" href="#create-a-new-sveltekit-project"></a></h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">pnpm</span> dlx sv create my-app
+<span class="token builtin class-name">cd</span> my-app
+<span class="token function">git</span> init <span class="token operator">&#x26;&#x26;</span> <span class="token function">git</span> <span class="token function">add</span> -A <span class="token comment"># (optional)</span>
+<span class="token function">pnpm</span> run dev
+</code></pre>
+<h2 id="how-to-install-strapi">How to install strapi<a aria-hidden="true" class="anchor-heading icon-link" href="#how-to-install-strapi"></a></h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">pnpm</span> dlx create-strapi-app@latest
+</code></pre>
+<p>See <a href="https://strapi.io">strapi.io</a> for details.</p>
+<h2 id="clone-only-the-latest-commit-of-a-git-repository">Clone only the latest commit of a Git repository<a aria-hidden="true" class="anchor-heading icon-link" href="#clone-only-the-latest-commit-of-a-git-repository"></a></h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone --depth <span class="token number">1</span> <span class="token operator">&#x3C;</span>url<span class="token operator">></span>
+</code></pre>
+<p>If you need an specific commit, you can obtain it with the <code>git checkout</code>
+command:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> checkout <span class="token operator">&#x3C;</span>commit_hash<span class="token operator">></span>
+</code></pre>
+<h2 id="source">Source<a aria-hidden="true" class="anchor-heading icon-link" href="#source"></a></h2>
+<ol>
+<li>Bing AI Chat, 21/9/2023.</li>
+<li><a href="https://qastack.mx/programming/29368837/copy-a-git-repo-without-history">Copie un repositorio de git sin historial - QA Stack.</a></li>
+<li><a href="https://es.stackoverflow.com/questions/91014/clonar-repositorio-remoto-de-git-hasta-cierto-commit">Clonar repositorio remoto de git hasta cierto commit.</a></li>
+<li><a href="https://es.stackoverflow.com/questions/1458/regresar-un-repositorio-a-un-commit-especifico">Regresar un repositorio a un commit especifico - Stack Overflow.</a></li>
+<li><a href="https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-clone">Atlassian Git Tutorial.</a></li>
+</ol>
+<h1 id="edit-git-remote-url">Edit Git Remote URL<a aria-hidden="true" class="anchor-heading icon-link" href="#edit-git-remote-url"></a></h1>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> remote set-url origin <span class="token operator">&#x3C;</span>new-url<span class="token operator">></span>
+
+</code></pre>
+<p><a href="https://chat.openai.com/share/5bbfc058-d6be-4ec8-b03f-be8df3619c37">Source</a></p>
+<h1 id="django-tests-not-running">Django tests not running<a aria-hidden="true" class="anchor-heading icon-link" href="#django-tests-not-running"></a></h1>
+<p><strong>Solution.</strong> Make sure you are writing your tests wrapped in classes that inherit from <code>TestCase</code>. Example:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>test <span class="token keyword">import</span> TestCase
+
+
+<span class="token keyword">class</span> <span class="token class-name">FooTest</span><span class="token punctuation">(</span>TestCase<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">setUp</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">tearDown</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">test_this_will</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string">'Win'</span>
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/2037364/django-test-runner-not-finding-tests">Read more</a></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/dendron/notes/cfm4n435nhmnbubcoi8a356">Code Snippets</a></li>
+<li><a href="/dendron/notes/1fm4dncuybvd5vqj931b01n">Coding tips for the R programming language</a></li>
+<li><a href="/dendron/notes/rckztplnjk566zxgkjdtzhl">Julia</a></li>
+<li><a href="/dendron/notes/ziizr10bs55a7fbr3fc61sc">Power Shell</a></li>
+<li><a href="/dendron/notes/hwyvw05ski3srgkxy31ym7w">Python</a></li>
+<li><a href="/dendron/notes/j9wmd96lxohstbdavjirhbo">Ruby</a></li>
+</ol>

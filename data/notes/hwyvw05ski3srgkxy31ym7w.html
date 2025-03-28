@@ -1,0 +1,35 @@
+<h1 id="python">Python<a aria-hidden="true" class="anchor-heading icon-link" href="#python"></a></h1>
+<h2 id="methods-to-convert-xml-to-json">Methods to Convert XML to JSON<a aria-hidden="true" class="anchor-heading icon-link" href="#methods-to-convert-xml-to-json"></a></h2>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> xmltodict
+<span class="token keyword">import</span> json
+<span class="token keyword">import</span> os
+
+<span class="token comment"># Directorio con tus archivos XML</span>
+directorio <span class="token operator">=</span> <span class="token string">'ruta/a/tus/facturas'</span>
+
+<span class="token comment"># Procesar cada archivo XML</span>
+<span class="token keyword">for</span> archivo <span class="token keyword">in</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>directorio<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> archivo<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'.xml'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>directorio<span class="token punctuation">,</span> archivo<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> xml_file<span class="token punctuation">:</span>
+            xml_content <span class="token operator">=</span> xml_file<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            datos_json <span class="token operator">=</span> xmltodict<span class="token punctuation">.</span>parse<span class="token punctuation">(</span>xml_content<span class="token punctuation">)</span>
+            
+            <span class="token comment"># Guardar como archivo JSON</span>
+            <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>archivo<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'.xml'</span><span class="token punctuation">,</span> <span class="token string">'.json'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> json_file<span class="token punctuation">:</span>
+                json<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>datos_json<span class="token punctuation">,</span> json_file<span class="token punctuation">,</span> indent<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+</code></pre>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/dendron/notes/cwab3v7c5fbe9heqos93k0e">Best Practices</a></li>
+<li><a href="/dendron/notes/6zw1kq25fhhqug5i45y1srj">Como extraer metadatos del volcado de una base de datos</a></li>
+<li><a href="/dendron/notes/01t8dold57nwpw63e18ba80">Django</a></li>
+<li><a href="/dendron/notes/gznvznjzcsize57jmnzk130">How to use Argparse</a></li>
+<li><a href="/dendron/notes/l0u48190oqzxwanw96fjofu">Password generator</a></li>
+<li><a href="/dendron/notes/xerksxa0wc8wxg4wymgrp0i">Projects</a></li>
+<li><a href="/dendron/notes/qpru2s8dnotjix9okh0haqe">Recomended tools to build python software</a></li>
+<li><a href="/dendron/notes/z2m9aey7liflnpmzo3gh61z">Remove punctuation symbols from string</a></li>
+<li><a href="/dendron/notes/vvdgu21ycbtn2zfytwremiy">Testing</a></li>
+<li><a href="/dendron/notes/g4q8yp5c8b2h1nlehk01cxt">URL to title</a></li>
+</ol>

@@ -1,0 +1,32 @@
+<h1 id="remove-punctuation-symbols-from-string">Remove punctuation symbols from string<a aria-hidden="true" class="anchor-heading icon-link" href="#remove-punctuation-symbols-from-string"></a></h1>
+<h1 id="the-problem">The problem<a aria-hidden="true" class="anchor-heading icon-link" href="#the-problem"></a></h1>
+<p>Often a string with special characters like <code>"this \"string\""</code> shall be used as input of another program
+with all the special characters removed. A case of use could be for example if the input string is to be used as
+a filename in another program. </p>
+<h1 id="the-solution">The solution<a aria-hidden="true" class="anchor-heading icon-link" href="#the-solution"></a></h1>
+<p>We create a translation table that maps any punctuation symbol into <code>None</code>. Punctuation symbols in python are defined in the module <code>string</code>.</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> string
+
+<span class="token keyword">def</span> <span class="token function">remove_special_characters</span><span class="token punctuation">(</span>input_string<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># Create a translation table mapping special characters to None</span>
+    translation_table <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">.</span>maketrans<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> string<span class="token punctuation">.</span>punctuation<span class="token punctuation">)</span>
+
+    <span class="token comment"># Remove special characters using the translation table</span>
+    cleaned_string <span class="token operator">=</span> input_string<span class="token punctuation">.</span>translate<span class="token punctuation">(</span>translation_table<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> cleaned_string
+
+<span class="token comment"># Example usage</span>
+input_string <span class="token operator">=</span> <span class="token string">'Hello! "How are you?"'</span>
+cleaned_string <span class="token operator">=</span> remove_special_characters<span class="token punctuation">(</span>input_string<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>cleaned_string<span class="token punctuation">)</span>
+</code></pre>
+<h1 id="references">References<a aria-hidden="true" class="anchor-heading icon-link" href="#references"></a></h1>
+<ol>
+<li>
+<p><a href="https://chat.openai.com/share/b634b9a2-42f9-4293-8626-1406122dab7a">https://chat.openai.com/share/b634b9a2-42f9-4293-8626-1406122dab7a</a></p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/library/string.html">String module</a></p>
+</li>
+</ol>
