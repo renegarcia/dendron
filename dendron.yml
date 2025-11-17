@@ -99,7 +99,7 @@ publishing:
     siteRootDir: docs
     seo:
         title: Notes
-        description: Personal Knowledge Space or Rene Garcia
+        description: Personal Knowledge Space of Rene Garcia
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub
