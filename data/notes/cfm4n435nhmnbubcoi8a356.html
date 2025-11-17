@@ -1,0 +1,19 @@
+<h1 id="code-snippets">Code Snippets<a aria-hidden="true" class="anchor-heading icon-link" href="#code-snippets"></a></h1>
+<h1 id="creating-secret-keys-from-the-command-line">Creating secret keys from the command line<a aria-hidden="true" class="anchor-heading icon-link" href="#creating-secret-keys-from-the-command-line"></a></h1>
+<p>Within linux</p>
+<pre class="language-sh"><code class="language-sh">openssl rand -base64 32
+</code></pre>
+<p>With python</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">import</span> secrets
+secrets<span class="token punctuation">.</span>token_hex<span class="token punctuation">(</span><span class="token number">24</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="how-to-set-gnome-wallpaper-using-the-command-line">How to set gnome wallpaper using the command line<a aria-hidden="true" class="anchor-heading icon-link" href="#how-to-set-gnome-wallpaper-using-the-command-line"></a></h1>
+<pre class="language-sh"><code class="language-sh">gsettings set org.gnome.desktop.background picture-uri file:///path/to/image
+</code></pre>
+<h2 id="setting-bings-image-of-the-day-as-wallpaper">Setting bing's image of the day as wallpaper<a aria-hidden="true" class="anchor-heading icon-link" href="#setting-bings-image-of-the-day-as-wallpaper"></a></h2>
+<pre class="language-sh"><code class="language-sh">wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/&#x3C;[^>]*>//g' | cut -d / -f2 | cut -d \&#x26; -f1)"
+
+gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
+
+</code></pre>
+<p><strong>Source:</strong> <a href="https://linuxconfig.org/set-wallpaper-on-ubuntu-20-04-using-command-line">https://linuxconfig.org/set-wallpaper-on-ubuntu-20-04-using-command-line</a></p>

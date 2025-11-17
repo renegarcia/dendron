@@ -1,0 +1,50 @@
+<h1 id="url-to-title">URL to title<a aria-hidden="true" class="anchor-heading icon-link" href="#url-to-title"></a></h1>
+<p>Simple program that reads an url and prints the last part of the path as a title. </p>
+<script src="https://gist.github.com/renegarcia/9e80f1c84c57753b5aa4e19f0b8198db.js"></script>
+<h1 id="code">Code<a aria-hidden="true" class="anchor-heading icon-link" href="#code"></a></h1>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>parse <span class="token keyword">import</span> urlparse
+
+<span class="token keyword">def</span> <span class="token function">get_last_path</span><span class="token punctuation">(</span>url<span class="token punctuation">:</span><span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">str</span><span class="token punctuation">:</span>
+    <span class="token comment"># Parse the URL</span>
+    parsed_url <span class="token operator">=</span> urlparse<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+    <span class="token comment"># Get the path from the parsed URL</span>
+    path <span class="token operator">=</span> parsed_url<span class="token punctuation">.</span>path
+
+    <span class="token comment"># Split the path by slashes and get the last part</span>
+    path_parts <span class="token operator">=</span> path<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+    last_part <span class="token operator">=</span> path_parts<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">return</span> last_part
+
+<span class="token keyword">def</span> <span class="token function">path_to_title</span><span class="token punctuation">(</span>path<span class="token punctuation">:</span><span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">str</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> path<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">,</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"Enter the URL: "</span><span class="token punctuation">)</span>
+    path <span class="token operator">=</span> get_last_path<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    title <span class="token operator">=</span> path_to_title<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>title<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">:</span>
+            <span class="token keyword">break</span>
+</code></pre>
+<h1 id="case-of-use">Case of use<a aria-hidden="true" class="anchor-heading icon-link" href="#case-of-use"></a></h1>
+<p>I use this to format references in my mardown documents. For example, given the url </p>
+<pre><code>https://stackoverflow.com/questions/76392847/flutter-firebase-to-python-firebase
+</code></pre>
+<p>The program outputs</p>
+<pre><code>Flutter Firebas To Python Firebase
+</code></pre>
+<p>which I use to link to the question, like so:</p>
+<pre class="language-markdown"><code class="language-markdown"><span class="token url">[<span class="token content">Flutter Firebas To Python Firebase</span>](<span class="token url">https://stackoverflow.com/questions/76392847/flutter-firebase-to-python-firebase</span>)</span>
+</code></pre>
+<h1 id="references">References<a aria-hidden="true" class="anchor-heading icon-link" href="#references"></a></h1>
+<ul>
+<li><a href="https://gist.github.com/renegarcia/9e80f1c84c57753b5aa4e19f0b8198db">Gist version</a></li>
+<li><a href="https://colab.research.google.com/drive/1MhXnLZnS7I_oaRjYExcg63TND32YDcHL?usp=sharing">Interactive version in a jupyter notebook</a></li>
+</ul>
